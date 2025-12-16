@@ -14,22 +14,31 @@ body{
     align-items: center;
     ul, ol{
     margin: 20px;
-}
+    }
     a{
         color: white;
     }
-    img{
-        margin-top: 20px;
-        border: 50px solid black;
-        width: 80%;
+    .linkedin{
+        img{
+            margin-top: 20px;
+            border: 50px solid black;
+            width: 80vw;
+
+        }
+        img:hover{
+             box-shadow: 1rem 3rem 3rem white;
+         }
     }
-    img:hover{
-        box-shadow: 3px 6px 6px white;
-    }
-    fieldset{
-        legend{
-            display: flex;
-            text-align: center;
+    .fieldsets{
+        margin-top: 90px;
+        fieldset{
+            legend{
+                display: flex;
+                text-align: center;
+            }
         }
     }
+
+
+
 }
