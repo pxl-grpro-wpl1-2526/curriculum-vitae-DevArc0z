@@ -44,8 +44,17 @@ body{
     .linkedin{
         img{
             margin-top: 20px;
-            border: 50px solid black;
+
             width: 80vw;
+            @media screen and (max-width: 576px) {
+                border: 10px solid black;
+            }
+            @media screen and (min-width: 992px) {
+                border: 50px solid black;
+            }
+            @media screen and (min-width: 576px) and (max-width: 992px) {
+                border: 30px solid black;
+            }
 
         }
         img:hover{
@@ -53,11 +62,29 @@ body{
          }
     }
     .fieldsets{
-        margin-top: 90px;
-        margin-bottom: 1rem;
+        margin: 90px 2rem 2rem 2rem;
         display: flex;
-        flex-direction: column;
+
+        @media screen and (max-width: 576px) {
+            flex-direction: column;
+        }
+        @media screen and (min-width: 992px) {
+            flex-direction: row;
+        }
+        @media screen and (min-width: 576px) and (max-width: 992px) {
+            flex-direction: row;
+        }
+
         gap: 1rem;
+        .left{
+            display: flex;
+            flex-direction: column;
+            width: 30vw;
+        }
+        .right{
+            display: flex;
+            flex-direction: column;
+        }
         fieldset{
             padding: 1rem;
             legend{
