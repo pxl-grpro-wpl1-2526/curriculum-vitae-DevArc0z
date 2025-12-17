@@ -94,6 +94,7 @@ body{
             flex-direction: row;
             fieldset{
                 display: flex;
+                flex-direction: column;
                 padding: 1rem;
                 legend{
                     display: flex;
@@ -151,6 +152,40 @@ body{
     }
 
 }
+
+.language{
+    display: flex;
+    flex-direction: column;
+    .languageSkill{
+        display: flex;
+        flex-direction: column;
+        .progress{
+            width: 100%;
+            height: 15px;
+            background-color: #dddddd;
+            border-radius: 10px;
+            position: relative;
+            overflow: hidden;
+            span{
+                position: absolute;
+                height: 100%;
+                border-radius: 10px;
+                width: 70%;
+                background-color: crimson;
+            }
+            .dutch{
+                width: 90%;
+            }
+            .english{
+                width: 85%;
+            }
+            .french{
+                width: 20%;
+            }
+        }
+    }
+}
+
 footer{
     display: flex;
     align-items: center;
