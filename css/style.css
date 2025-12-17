@@ -7,11 +7,29 @@
 html{
     scroll-behavior: smooth;
 }
+.navbar{
+    background-color: black;
+    display: flex;
+    padding: 1rem;
+    a{
+        text-decoration: none;
+        padding: 6px 12px;
+        color: white;
+        border: red solid 1px;
+        background-color: red;
+        border-radius: 24px;
+    }
+}
 
+.mySite{
+    font-weight: bold;
+    font-size: 170%;
+}
 body{
     background: linear-gradient(darkred, black);
     color: white;
-
+    font-family: "Sofia", sans-serif;
+    font-size: 115%;
 }
 .wrapper {
     display: flex;
@@ -41,9 +59,16 @@ body{
         flex-direction: column;
         gap: 1rem;
         fieldset{
+            padding: 1rem;
             legend{
                 display: flex;
                 text-align: center;
+            }
+        }
+        fieldset:hover{
+            color: gold;
+            a{
+                color: gold;
             }
         }
     }
@@ -63,4 +88,8 @@ footer{
         padding: 5px 12px;
         border-radius: 12px;
     }
+
+}
+.name:hover, .task:hover, .redirect:hover{
+    color: gold;
 }
