@@ -28,7 +28,7 @@ html{
 .spinning:hover {
     width: 100%;
     overflow: hidden;
-    animation: spin 2s;
+    animation: spin 1s;
 }
 @keyframes spin {
     from {
