@@ -10,6 +10,8 @@ html{
 .navbar{
     background-color: black;
     display: flex;
+    flex-direction: row;
+    gap: 1rem;
     padding: 1rem;
     a{
         text-decoration: none;
@@ -69,6 +71,7 @@ body{
             flex-direction: column;
             fieldset{
                 display: flex;
+                flex-direction: column;
                 padding: 1rem;
                 legend{
                     display: flex;
@@ -123,6 +126,8 @@ body{
         @media screen and (min-width: 576px) and (max-width: 992px) {
             flex-direction: column;
             fieldset{
+                display: flex;
+                flex-direction: column;
                 color: gold;
                 a{
                     color: gold;
