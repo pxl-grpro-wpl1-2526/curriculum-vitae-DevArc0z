@@ -10,9 +10,16 @@ html{
 .navbar{
     background-color: black;
     display: flex;
+    justify-content: space-between;
     flex-direction: row;
     gap: 1rem;
     padding: 1rem;
+    .CV{
+        display: flex;
+        flex-direction: row;
+        align-items: start;
+        gap: 1rem;
+    }
     a{
         text-decoration: none;
         padding: 6px 12px;
@@ -20,6 +27,9 @@ html{
         border: red solid 1px;
         background-color: red;
         border-radius: 24px;
+    }
+    .aboutMe{
+        display: flex;
     }
 }
 
@@ -31,14 +41,32 @@ body{
     background: linear-gradient(darkred, black);
     color: white;
     font-family: "Sofia", sans-serif;
-    font-size: 115%;
+
+    @media screen and (max-width: 576px) {
+        font-size: 24px;
+    }
+    @media screen and (min-width: 576px) and (max-width: 992px) {
+        font-size: 24px;
+    }
+    @media screen and (min-width: 992px) {
+        font-size: 18px;
+    }
 }
 .wrapper {
     display: flex;
     flex-direction: column;
     align-items: center;
     ul, ol{
-    margin: 20px;
+        @media screen and (max-width: 576px) {
+            margin: 20px;
+        }
+        @media screen and (min-width: 576px) and (max-width: 992px) {
+            margin: 30px;
+        }
+        @media screen and (min-width: 992px) {
+            margin: 20px;
+        }
+
     }
     a{
         color: white;
@@ -46,6 +74,7 @@ body{
     .linkedin{
         img{
             margin-top: 20px;
+            border-radius: 50px;
 
             width: 80vw;
             @media screen and (max-width: 576px) {
@@ -131,6 +160,10 @@ body{
                 color: gold;
                 a{
                     color: gold;
+                }
+                legend{
+                    display: flex;
+                    text-align: center;
                 }
             }
             fieldset:hover{
