@@ -84,4 +84,10 @@ article{
 
     }
 }
+footer{
+    background-color: lightgray;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
 
