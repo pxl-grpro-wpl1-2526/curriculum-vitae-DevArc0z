@@ -11,22 +11,52 @@ html{
 #body {
     width: 100%;
     overflow: hidden;
-    animation: slide-left 3s;
+    animation: opacity 3s;
 }
 
 
-@keyframes slide-left {
+@keyframes opacity {
     from {
-        margin-left: 100%;
-        width: 300%;
+        opacity: 0;
     }
 
     to {
-        margin-left: 0%;
-        width: 100%;
+        opacity: 1;
     }
 }
 
+.spinning:hover {
+    width: 100%;
+    overflow: hidden;
+    animation: spin 2s;
+}
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+
+.language:hover{
+    .progress{
+        animation: slide-right 2s;
+        width: 100%;
+        overflow: hidden;
+    }
+
+}
+
+@keyframes slide-right {
+    from {
+        width: 0;
+    }
+    to{
+        width: 100%;
+    }
+}
 .navbar{
     background-color: black;
     display: flex;
