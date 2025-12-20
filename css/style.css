@@ -41,20 +41,46 @@ html{
 }
 
 .language:hover{
-    .progress{
-        animation: slide-right 2s;
-        width: 100%;
+    .dutch{
+        animation: slide-right1 2s;
+        width: 90%;
+        overflow: hidden;
+    }
+    .english{
+        animation: slide-right2 2s;
+        width: 85%;
+        overflow: hidden;
+    }
+    .french{
+        animation: slide-right3 2s;
+        width: 20%;
         overflow: hidden;
     }
 
 }
 
-@keyframes slide-right {
+@keyframes slide-right1 {
     from {
         width: 0;
     }
     to{
-        width: 100%;
+        width: 90%;
+    }
+}
+@keyframes slide-right2 {
+    from {
+        width: 0;
+    }
+    to{
+        width: 85%;
+    }
+}
+@keyframes slide-right3 {
+    from {
+        width: 0;
+    }
+    to{
+        width: 20%;
     }
 }
 .navbar{
